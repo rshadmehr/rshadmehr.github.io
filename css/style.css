@@ -113,3 +113,32 @@ footer {
         font-size: 32px;
     }
 }
+
+.featured-video {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.featured-video h2 {
+    color: #002D72;
+}
+
+.video-container {
+    max-width: 750px;
+    margin: 25px auto 12px;
+}
+
+.video-container video {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.video-caption {
+    text-align: center;
+    color: #666;
+    font-size: 15px;
+    margin-top: 12px;
+}
