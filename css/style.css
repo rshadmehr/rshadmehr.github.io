@@ -82,14 +82,29 @@ h2 {
 
 .research-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
     margin-top: 30px;
 }
 
 .research-card {
     border-top: 3px solid #333;
     padding-top: 15px;
+}
+
+.research-card h3 {
+    margin-top: 0;
+    font-size: 21px;
+}
+
+.research-video {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+    background: #000;
 }
 
 footer {
@@ -101,44 +116,46 @@ footer {
 }
 
 @media (max-width: 750px) {
+
+    header {
+        padding: 22px 18px 14px;
+    }
+
+    .hero {
+        padding: 0 18px;
+    }
+
+    main {
+        padding: 35px 18px 55px;
+    }
+
     .research-grid {
         grid-template-columns: 1fr;
+        gap: 40px;
     }
 
     .site-title {
         font-size: 28px;
     }
 
+    .site-subtitle {
+        font-size: 16px;
+    }
+
     h1 {
         font-size: 32px;
     }
-}
 
-.featured-video {
-    margin-top: 60px;
-    margin-bottom: 60px;
-}
+    h2 {
+        font-size: 25px;
+    }
 
-.featured-video h2 {
-    color: #002D72;
-}
+    .intro {
+        font-size: 19px;
+    }
 
-.video-container {
-    max-width: 750px;
-    margin: 25px auto 12px;
-}
-
-.video-container video {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
-}
-
-.video-caption {
-    text-align: center;
-    color: #666;
-    font-size: 15px;
-    margin-top: 12px;
+    nav a {
+        padding: 12px 16px;
+        font-size: 15px;
+    }
 }
