@@ -26,20 +26,23 @@ header {
 
 nav {
     margin-top: 22px;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    padding: 12px 0;
+    background-color: #002D72;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 nav a {
     text-decoration: none;
-    color: #222;
-    margin-right: 28px;
+    color: white;
+    padding: 14px 22px;
     font-size: 16px;
+    display: block;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    background-color: #005EB8;
+    text-decoration: none;
 }
 
 .hero {
