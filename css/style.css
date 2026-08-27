@@ -105,11 +105,6 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    nav a {
-        display: inline-block;
-        margin-bottom: 8px;
-    }
-
     .site-title {
         font-size: 28px;
     }
