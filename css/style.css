@@ -169,3 +169,151 @@ footer {
         font-size: 15px;
     }
 }
+
+/* ========================================
+   Mentoring page
+======================================== */
+
+.mentoring-philosophy {
+    max-width: 950px;
+    margin-bottom: 60px;
+}
+
+.mentoring-philosophy h2,
+.mentoring-section h2 {
+    color: #002D72;
+    border-bottom: 1px solid #d9e2ec;
+    padding-bottom: 8px;
+    margin-bottom: 25px;
+}
+
+.mentoring-philosophy p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.mentoring-story {
+    font-size: 21px !important;
+    color: #444;
+}
+
+.mentoring-section {
+    margin-top: 60px;
+}
+
+.section-intro {
+    font-size: 18px;
+    color: #555;
+    max-width: 850px;
+    margin-bottom: 30px;
+}
+
+
+/* Current students */
+
+.people-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.person-card {
+    padding: 22px;
+    border: 1px solid #d5e2ef;
+    border-radius: 8px;
+    background: #f7f9fc;
+}
+
+.person-name {
+    color: #002D72;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.person-role {
+    color: #666;
+    margin-top: 4px;
+    font-size: 15px;
+}
+
+
+/* Academic faculty list */
+
+.faculty-list {
+    border-top: 1px solid #ddd;
+}
+
+.faculty-entry {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.faculty-entry strong {
+    color: #002D72;
+}
+
+.faculty-entry span {
+    color: #555;
+}
+
+
+/* Alumni lists */
+
+.alumni-list {
+    border-top: 1px solid #ddd;
+}
+
+.alumni-entry {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    padding: 14px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.alumni-entry > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.alumni-entry strong {
+    color: #002D72;
+    font-size: 17px;
+}
+
+.alumni-entry span {
+    color: #777;
+    font-size: 14px;
+}
+
+.alumni-entry p {
+    margin: 0;
+    color: #444;
+}
+
+
+/* Mobile */
+
+@media (max-width: 750px) {
+
+    .people-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .faculty-entry,
+    .alumni-entry {
+        grid-template-columns: 1fr;
+        gap: 3px;
+    }
+
+    .mentoring-story {
+        font-size: 19px !important;
+    }
+
+    .mentoring-philosophy p {
+        font-size: 17px;
+    }
+}
