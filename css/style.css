@@ -60,7 +60,11 @@ nav a:hover {
 main {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 50px 24px 70px;
+    padding: 15px 24px 70px;
+}
+
+main > h2:first-child {
+    margin-top: 0;
 }
 
 h1 {
