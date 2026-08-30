@@ -97,6 +97,15 @@ h2 {
     font-size: 21px;
 }
 
+.research-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
 .research-video {
     width: 100%;
     height: auto;
