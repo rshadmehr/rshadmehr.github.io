@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 28px 24px 0;
 }
@@ -60,7 +60,7 @@ nav a:hover {
 main {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 8px 24px 70px;
+    padding: 15px 24px 70px;
 }
 
 main > h2:first-child {
