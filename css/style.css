@@ -179,8 +179,8 @@ footer {
     margin-bottom: 60px;
 }
 
-.mentoring-philosophy h2,
-.mentoring-section h2 {
+.mentoring-philosophy h3,
+.mentoring-section h3 {
     color: #002D72;
     border-bottom: 1px solid #d9e2ec;
     padding-bottom: 8px;
@@ -188,7 +188,7 @@ footer {
 }
 
 .mentoring-philosophy p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.7;
 }
 
