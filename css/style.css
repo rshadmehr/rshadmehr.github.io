@@ -211,8 +211,6 @@ footer {
 
 /* Current students */
 
-/* Current students */
-
 .people-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -272,58 +270,36 @@ footer {
 /* Academic faculty list */
 
 .faculty-list {
+    width: 100%;
     border-top: 1px solid #ddd;
 }
 
 .faculty-entry {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 30px;
-    padding: 12px 0;
+    grid-template-columns: 70px 240px 1fr;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0;
     border-bottom: 1px solid #ddd;
+}
+
+.faculty-photo {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 6px;
 }
 
 .faculty-entry strong {
     color: #002D72;
+    font-size: 16px;
 }
 
 .faculty-entry span {
     color: #555;
-}
-
-
-/* Alumni lists */
-
-.alumni-list {
-    border-top: 1px solid #ddd;
-}
-
-.alumni-entry {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 30px;
-    padding: 14px 0;
-    border-bottom: 1px solid #ddd;
-}
-
-.alumni-entry > div {
-    display: flex;
-    flex-direction: column;
-}
-
-.alumni-entry strong {
-    color: #002D72;
-    font-size: 17px;
-}
-
-.alumni-entry span {
-    color: #777;
-    font-size: 14px;
-}
-
-.alumni-entry p {
-    margin: 0;
-    color: #444;
+    font-size: 16px;
+    line-height: 1.4;
 }
 
 
@@ -334,4 +310,23 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    .faculty-entry {
+        grid-template-columns: 60px 1fr;
+        gap: 12px 16px;
+    }
+
+    .faculty-photo {
+        width: 60px;
+        height: 60px;
+        grid-row: 1 / 3;
+    }
+
+    .faculty-entry strong {
+        align-self: end;
+    }
+
+    .faculty-entry span {
+        align-self: start;
+        font-size: 14px;
+    }
 }
