@@ -302,6 +302,156 @@ footer {
     line-height: 1.4;
 }
 
+/* ========================================
+   Individual profile pages
+======================================== */
+
+.profile-header {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 40px;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 45px;
+}
+
+.profile-photo {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+
+.profile-heading h1 {
+    margin: 0 0 8px 0;
+    color: #002D72;
+}
+
+.profile-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #444;
+    margin: 0 0 4px 0;
+}
+
+.profile-affiliation {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+    line-height: 1.5;
+}
+
+
+/* Google Scholar / ORCID links */
+
+.profile-links {
+    margin-top: 16px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.profile-links a {
+    color: #002D72;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.profile-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* Profile sections */
+
+.profile-section {
+    margin-top: 42px;
+}
+
+.profile-section h2 {
+    color: #002D72;
+    font-size: 24px;
+    border-bottom: 1px solid #d9e2ec;
+    padding-bottom: 6px;
+    margin-bottom: 18px;
+}
+
+.profile-section p {
+    max-width: 850px;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* Publications */
+
+.profile-publication {
+    max-width: 850px;
+    margin-bottom: 16px;
+}
+
+.profile-publication p {
+    margin: 0;
+}
+
+
+/* Gallery */
+
+.profile-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.profile-gallery img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    display: block;
+}
+
+
+/* Back to mentoring page */
+
+.profile-back {
+    margin-top: 45px;
+}
+
+.profile-back a {
+    color: #002D72;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.profile-back a:hover {
+    text-decoration: underline;
+}
+
+
+/* Mobile profile page */
+
+@media (max-width: 750px) {
+
+    .profile-header {
+        grid-template-columns: 1fr;
+        gap: 22px;
+        margin-top: 15px;
+    }
+
+    .profile-photo {
+        width: 180px;
+        height: 180px;
+    }
+
+    .profile-gallery {
+        grid-template-columns: 1fr;
+    }
+
+}
 
 /* Mobile */
 @media (max-width: 750px) {
