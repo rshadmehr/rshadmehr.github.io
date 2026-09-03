@@ -397,12 +397,15 @@ footer {
 
 
 /* Gallery */
-
 .profile-gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
+    gap: 24px 18px;
     margin-top: 20px;
+}
+
+.profile-gallery figure {
+    margin: 0;
 }
 
 .profile-gallery img {
@@ -414,6 +417,12 @@ footer {
     display: block;
 }
 
+.profile-gallery figcaption {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #666;
+}
 
 /* Back to mentoring page */
 
