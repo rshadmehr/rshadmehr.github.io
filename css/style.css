@@ -302,6 +302,15 @@ footer {
     line-height: 1.4;
 }
 
+.faculty-entry {
+    text-decoration: none;
+    color: inherit;
+}
+
+.faculty-entry:hover strong {
+    text-decoration: underline;
+}
+
 /* ========================================
    Individual profile pages
 ======================================== */
