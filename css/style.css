@@ -281,6 +281,8 @@ footer {
     gap: 20px;
     padding: 10px 0;
     border-bottom: 1px solid #ddd;
+    text-decoration: none;
+    color: inherit;
 }
 
 .faculty-photo {
@@ -291,24 +293,34 @@ footer {
     border-radius: 6px;
 }
 
-.faculty-entry strong {
-    color: #002D72;
-    font-size: 16px;
+.faculty-person {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
 }
 
-.faculty-entry span {
-    color: #555;
+.faculty-name {
+    color: #002D72;
     font-size: 16px;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.faculty-role {
+    color: #777;
+    font-size: 13px;
+    margin-top: 3px;
+    line-height: 1.3;
+}
+
+.faculty-position {
+    color: #555;
+    font-size: 15px;
     line-height: 1.4;
 }
 
-.faculty-entry {
-    text-decoration: none;
-    color: inherit;
-}
-
-.faculty-entry:hover strong {
-    text-decoration: underline;
+.faculty-entry:hover {
+    background: #f7f9fc;
 }
 
 /* ========================================
@@ -409,7 +421,7 @@ footer {
 .profile-gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 24px 18px;
+    gap: 20px 10px;
     margin-top: 20px;
 }
 
@@ -486,15 +498,16 @@ footer {
     .faculty-photo {
         width: 60px;
         height: 60px;
-        grid-row: 1 / 3;
+        grid-row: 1;
     }
 
-    .faculty-entry strong {
-        align-self: end;
+    .faculty-person {
+        grid-column: 2;
     }
 
-    .faculty-entry span {
-        align-self: start;
+    .faculty-position {
+        grid-column: 2;
         font-size: 14px;
+        margin-top: 4px;
     }
 }
