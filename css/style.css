@@ -418,10 +418,12 @@ footer {
 
 
 /* Gallery */
+/* Gallery */
+
 .profile-gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px 10px;
+    gap: 24px 18px;
     margin-top: 20px;
 }
 
@@ -429,13 +431,23 @@ footer {
     margin: 0;
 }
 
-.profile-gallery img {
+/* Photos and videos use the same gallery dimensions */
+
+.profile-gallery img,
+.profile-gallery video {
     width: 100%;
     aspect-ratio: 4 / 3;
     object-fit: cover;
     object-position: center;
     border-radius: 8px;
     display: block;
+}
+
+/* Black background while video is loading */
+
+.profile-gallery video {
+    background: #000;
+    object-fit: contain;
 }
 
 .profile-gallery figcaption {
