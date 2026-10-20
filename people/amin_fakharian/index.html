@@ -36,6 +36,7 @@
 
 <main>
 
+
     <!-- PROFILE HEADER -->
 
     <section class="profile-header">
@@ -50,12 +51,7 @@
             <h1>Amin Fakharian</h1>
 
             <p class="profile-title">
-                PhD
-            </p>
-
-            <p class="profile-affiliation">
-                Laboratory for Computational Motor Control<br>
-                Johns Hopkins University
+                PhD (2025)
             </p>
 
             <div class="profile-links">
@@ -67,20 +63,13 @@
                     Google Scholar
                 </a>
 
-                <a
-                    href="https://orcid.org/0000-0002-7741-8689"
-                    target="_blank"
-                    rel="noopener">
-                    ORCID
-                </a>
-
             </div>
 
         </div>
 
     </section>
 
-
+    
     <!-- RESEARCH -->
 
     <section class="profile-section">
@@ -88,186 +77,505 @@
         <h2>Research</h2>
 
         <p>
-            Amin joined the lab in 2021 as a graduate student in the BME PhD Program. 
-          He received a BS in Electronic Engineering from Sharif University of Technology, followed by an MS from Sharif.  
-          He was ranked 1st among all Sharif EE students.
+Amin joined the lab in 2021 as a graduate student in the BME PhD Program. He received a BS in Electronic Engineering from 
+          Sharif University of Technology, followed by an MS from Sharif.  He was ranked 1st among all Sharif EE students.
 
-Amin's research focues on the neural control of movements in marmosets, using silicon probes to record simultaneously from many neurons in the cerebellum. 
-          He played a critical role in building P-sort, an open-source tool for analysis of cerebellar neurophysiological. 
+Amin's research focues on the neural control of movements in marmosets, using silicon probes to record simultaneously from 
+          many neurons in the cerebellum. He played a critical role in building P-sort, an open-source tool for analysis of 
+          cerebellar neurophysiological. 
 
-Amin discovered that the mossy fiber input to the cerebellum provides two kinds of information: the goal of the movement in sensory coordinates, and the real-time state of the eyes as the brain attempts to achieve the goal. This discovery is likely to play a critical role in realtime neural decoding of the cerebellum.
+Amin discovered that the mossy fiber input to the cerebellum provides two kinds of information: the goal of the movement in 
+          sensory coordinates, and the real-time state of the eyes as the brain attempts to achieve the goal. This discovery is 
+          likely to play a critical role in realtime neural decoding of the cerebellum.
 
-Amin discovered a vector calculus in the cerebellum, demonstrating that each Purkinje cells was active to partially cancel the downstream effects of other Purkinje cells, demonstrating that the cerebellum performed function approximation via basis sets. During saccades, the cells together computed a function that assisted the motion of the eyes toward the target, then assisted in stopping that motion. 
+Amin discovered a vector calculus in the cerebellum, demonstrating that each Purkinje cells was active to partially cancel the 
+          downstream effects of other Purkinje cells. During saccades, the cells together computed a function that assisted the 
+          motion of the eyes toward the target, then assisted in stopping that motion. 
 
 Amin was awarded the Claude and Barbara Migeon prize for outstanding research by a graduate student at Johns Hopkins School of Medicine.
 
 Amin graduated in 2025, and subsequently started a postdoctoral fellowship with Mehrdad Jazayeri at MIT.
         </p>
+   
+        <h3>Ideas developed by Amin</h3>
+                
+        <li>
+            <strong>Discovering a vector calculus for neural
+            computation in the cerebellum.</strong>
+            Amin developed an approach for estimating the
+            contribution of individual Purkinje cells to
+            movement using spike-triggered averaging.
+            His work showed that each Purkinje cell has
+            a potent vector describing its influence on
+            eye movements. Spikes from different Purkinje
+            cells combine through vector superposition,
+            allowing population activity to generate
+            specific motor effects.
+        </li>
 
+        <li>
+            <strong>Demonstrating that neural activity can
+            cancel unwanted motor commands.</strong>
+            Amin showed that Purkinje cells are active
+            during movements in many directions, even
+            when their individual motor effects are
+            inconsistent with the intended movement.
+            The simultaneous activity of competing
+            populations allows unwanted components
+            of motor output to cancel, while preserving
+            components that contribute to the desired
+            movement. This provided experimental support
+            for null space computation in the brain.
+        </li>
+
+        <li>
+            <strong>Developing a framework for understanding
+            the neural language of the cerebellum.</strong>
+            Amin contributed to a computational framework
+            in which Purkinje cells act as vector-generating
+            basis functions. Rather than encoding movement
+            parameters through their individual firing
+            rates, Purkinje cells collectively control
+            behavior through the timing and superposition
+            of their motor effects. This framework
+            suggests that competing populations of
+            Purkinje cells can guide movements toward
+            their goals and determine when movements
+            should terminate.
+        </li>
+
+        <li>
+            <strong>Investigating how coordinated Purkinje
+            cell activity contributes to movement.</strong>
+            Amin contributed to experiments examining
+            synchronous spiking among Purkinje cells
+            and the relationship between complex spikes
+            and movement. These studies demonstrated
+            that coordinated spike timing and complex
+            spike events can influence motor output,
+            providing evidence that cerebellar
+            computation depends on the temporal
+            organization of neural activity as well
+            as changes in firing rates.
+        </li>
+
+        <li>
+            <strong>Investigating cerebellar control of
+            movement deceleration.</strong>
+            Amin contributed to research showing that
+            Purkinje cells regulate the deceleration
+            of tongue movements in behaving marmosets.
+            Together with his work on eye movements,
+            these findings suggest that cerebellar
+            population activity helps determine how
+            movements approach their goals and
+            are brought to a controlled stop.
+        </li>
+
+        <li>
+            <strong>Developing experimental and computational
+            tools for cerebellar neurophysiology.</strong>
+            Amin contributed to the development of
+            P-sort, an open-source software package
+            for identifying simple and complex spikes
+            in extracellular Purkinje cell recordings.
+            He also participated in behavioral studies
+            of effort-dependent foraging in marmosets.
+            These contributions helped expand the
+            experimental and analytical approaches
+            available for studying cerebellar function
+            during behavior.
+        </li>
     </section>
+  
+<!-- SELECTED PUBLICATIONS -->
 
+<section class="profile-section">
 
-    <!-- SELECTED PUBLICATIONS -->
+    <h2>Selected publications</h2>
 
-    <section class="profile-section">
-
-        <h2>Selected publications</h2>
-
-        <div class="profile-publication">
-            <p>
-                Fakharian MA, Shoup AM, Hage P, Elseweifi HY, Shadmehr R.
+    <div class="profile-publication">
+        <p>
+            Shadmehr R, Fakharian MA.
+            <a href="https://doi.org/10.1152/jn.00253.2025"
+               target="_blank" rel="noopener">
                 <strong>
-                    A vector calculus for neural computation in the cerebellum.
+                    A neural language for the cerebellum:
+                    control of behavior via competing
+                    populations of Purkinje cells.
                 </strong>
-                <em>Science</em>. 2025;388:869–875.
-            </p>
-        </div>
-
-        <div class="profile-publication">
-            <p>
-                Hage P, Fakharian MA, Shoup AM, Pi JS, Sedaghat-Nejad E,
-                Orozco SP, et al.
+            </a>
+            <em>Journal of Neurophysiology</em>.
+            2026;135:557–578.
+        </p>
+    </div>
+  
+    <div class="profile-publication">
+        <p>
+            Fakharian MA, Shoup AM, Hage P,
+            Elseweifi HY, Shadmehr R.
+            <a href="https://doi.org/10.1126/science.adu6331"
+               target="_blank" rel="noopener">
                 <strong>
-                    Purkinje cells of the cerebellum control deceleration
-                    of tongue movements.
+                    A vector calculus for neural computation
+                    in the cerebellum.
                 </strong>
-                <em>PLOS Biology</em>. 2025;23:e3003110.
-            </p>
-        </div>
+            </a>
+            <em>Science</em>.
+            2025;388(6749):869–875.
+        </p>
+    </div>
 
-        <div class="profile-publication">
-            <p>
-                Shoup AM, Porwal N, Fakharian MA, Hage P, Orozco SP,
-                Shadmehr R.
+    <div class="profile-publication">
+        <p>
+            Hage P, Fakharian MA, Shoup AM, Pi JS,
+            Sedaghat-Nejad E, Orozco SP, et al.
+            <a href="https://doi.org/10.1371/journal.pbio.3003110"
+               target="_blank" rel="noopener">
                 <strong>
-                    Rejuvenating silicon probes for acute neurophysiology.
+                    Purkinje cells of the cerebellum control
+                    deceleration of tongue movements.
                 </strong>
-                <em>Journal of Neurophysiology</em>.
-                2024;132:308–315.
-            </p>
-        </div>
+            </a>
+            <em>PLoS Biology</em>.
+            2025;23(4):e3003110.
+        </p>
+    </div>
 
-    </section>
+    <div class="profile-publication">
+        <p>
+            Hage P, Jang IK, Looi V, Fakharian MA,
+            Orozco SP, Pi JS, Sedaghat-Nejad E,
+            Shadmehr R.
+            <a href="https://doi.org/10.7554/eLife.87238"
+               target="_blank" rel="noopener">
+                <strong>
+                    Effort cost of harvest affects decisions
+                    and movement vigor of marmosets
+                    during foraging.
+                </strong>
+            </a>
+            <em>eLife</em>. 2023;12:RP87238.
+        </p>
+    </div>
 
+    <div class="profile-publication">
+        <p>
+            Muller SZ, Pi JS, Hage P, Fakharian MA,
+            Sedaghat-Nejad E, Shadmehr R.
+            <a href="https://doi.org/10.1016/j.cub.2023.09.062"
+               target="_blank" rel="noopener">
+                <strong>
+                    Complex spikes perturb movements and reveal
+                    the sensorimotor map of Purkinje cells.
+                </strong>
+            </a>
+            <em>Current Biology</em>.
+            2023;33(22):4869–4879.e3.
+        </p>
+    </div>
 
+    <div class="profile-publication">
+        <p>
+            Sedaghat-Nejad E, Pi JS, Hage P,
+            Fakharian MA, Shadmehr R.
+            <a href="https://doi.org/10.1073/pnas.2118954119"
+               target="_blank" rel="noopener">
+                <strong>
+                    Synchronous spiking of cerebellar
+                    Purkinje cells during control of movements.
+                </strong>
+            </a>
+            <em>Proceedings of the National Academy of Sciences</em>.
+            2022;119(14):e2118954119.
+        </p>
+    </div>
+
+    <div class="profile-publication">
+        <p>
+            Sedaghat-Nejad E, Fakharian MA, Pi JS, Hage P,
+            Kojima Y, Soetedjo R, Ohmae S, Medina JF,
+            Shadmehr R.
+            <a href="https://doi.org/10.1152/jn.00172.2021"
+               target="_blank" rel="noopener">
+                <strong>
+                    P-sort: an open-source software
+                    for cerebellar neurophysiology.
+                </strong>
+            </a>
+            <em>Journal of Neurophysiology</em>.
+            2021;126(4):1055–1075.
+        </p>
+    </div>
+  
+    <div class="profile-publication">
+        <p>
+            Fakharian MA.
+            <a href="https://jscholarship.library.jhu.edu/items/31ec5385-3e15-4c8e-a11f-8d50b010be80"
+               target="_blank" rel="noopener">
+                <strong>
+                    Cerebellar Microcircuits: From Rate Coding to Spike Temporal Coordination
+                </strong>
+            </a>
+            <em>PhD Dissertation</em>.
+            Johns Hopkins University, 2025.
+        </p>
+    </div>
+</section>
+  
     <!-- GALLERY -->
 
     <section class="profile-section">
-
+        
         <h2>Gallery</h2>
+<div class="profile-gallery">
 
-        <div class="profile-gallery">
+    <figure>
+    <video autoplay muted loop playsinline controls>
+        <source
+            src="/people/amin_fakharian/Ultra_Pcell_web.mp4"
+            type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <figcaption>
+        NeuroPixels Ultra recording of a Purkinje cell during saccades.
+    </figcaption>
+</figure>
+  
+    <figure>
+    <video autoplay muted loop playsinline controls>
+        <source
+            src="/people/amin_fakharian/mossyfibers_web.mp4"
+            type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <figcaption>
+        NeuroPixels Ultra recording of a mossy fiber during saccades.
+    </figcaption>
+</figure>
+  
+    <figure>
+    <video autoplay muted loop playsinline controls>
+        <source
+            src="/people/amin_fakharian/Neuropixels_eye_related_5_layers_web.mp4"
+            type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <figcaption>
+        NeuroPixels recording of 5 Purkinje layers during saccades.
+    </figcaption>
+</figure>
+  
+    <figure>
+    <video autoplay muted loop playsinline controls>
+        <source
+            src="/people/paul_hage/sfn_2022_flying.mp4"
+            type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <figcaption>
+        Paragliding at La Jolla, 2022.
+    </figcaption>
+</figure>
 
-            <figure>
-                <img
-                    src="/people/amin_fakharian/charlie_first_recording.jpg"
-                    alt="Amin's first recording from the cerebellum.">
-                <figcaption>
-                    Amin's first recording from the cerebellum.
-                </figcaption>
-            </figure>
+    <figure>
+        <img
+            src="/people/paul_hage/paul_amin_jay_flying.jpg"
+            alt="Paul, Amin, and Jay, paragliding">
+        <figcaption>
+            Paul, Amin, and Jay, after paragliding.
+        </figcaption>
+    </figure>
+        
+    <figure>
+        <img
+            src="/people/paul_hage/sfn_2022.jpg"
+            alt="SFN, 2022">
+        <figcaption>
+            SFN, 2022.
+        </figcaption>
+    </figure>
+    
+    <figure>
+        <img
+            src="/people/paul_hage/sfn_2022b.jpg"
+            alt="SFN, 2022">
+        <figcaption>
+            SFN, 2022.
+        </figcaption>
+    </figure>
 
-            <figure>
-                <img
-                    src="/people/amin_fakharian/amin_birthday_2023.jpg"
-                    alt="Lab celebrating Amin's birthday 2023.">
-                <figcaption>
-                    Lab celebrating Amin's birthday 2023.
-                </figcaption>
-            </figure>
-
-            <figure>
-                <img
-                    src="/people/amin_fakharian/amin_surgery.jpg"
-                    alt="Amin and Paul Hage at surgery.">
-                <figcaption>
-                    Amin and Paul Hage at surgery.
-                </figcaption>
-            </figure>
-
-            <figure>
-                <img
-                    src="/people/amin_fakharian/surgery_prep_2023.jpg"
-                    alt="Amin and lab memebers preparing for surgery.">
-                <figcaption>
-                    Amin and lab memebers preparing for surgery.
-                </figcaption>
-            </figure>
-
-            <figure>
-                <img
-                    src="/people/amin_fakharian/amin_sfn2022.jpg"
-                    alt="Amin at poster presentations SFN 2022">
-                <figcaption>
-                    Amin at poster presentations SFN 2022.
-                </figcaption>
-            </figure>
+    <figure>
+        <img
+            src="/people/paul_hage/mehrdad_2022.jpg"
+            alt="With Mehrdad Jazayeri, 2022">
+        <figcaption>
+            With Mehrdad Jazayeri, 2022.
+        </figcaption>
+    </figure>
             
-            <figure>
-                <img
-                    src="/people/amin_fakharian/amin_sfn2023.jpg"
-                    alt="Amin at poster presentations SFN 2023">
-                <figcaption>
-                    Amin at poster presentations SFN 2023.
-                </figcaption>
-            </figure>
+    <figure>
+        <img
+            src="/people/amin_fakharian/amin_paul_surgery_2022.jpg"
+            alt="Amin and Paul during surgery, 2022">
+        <figcaption>
+            Amin and Paul during surgery, 2022.
+        </figcaption>
+    </figure>
+  
+  <figure>
+        <img
+            src="/people/paul_hage/lab_sfn_2023.jpg"
+            alt="Lab at SFN, 2023">
+        <figcaption>
+            Lab at SFN, 2023.
+        </figcaption>
+    </figure>
+               
+    <figure>
+        <img
+            src="/people/amin_fakharian/amin_surgery_prep_2023.jpg"
+            alt="Surgery prep, 2023">
+        <figcaption>
+            Surgery prep, 2023.
+        </figcaption>
+    </figure>
+  
+    <figure>
+        <img
+            src="/people/amin_fakharian/amin_bday_2023.jpg"
+            alt="Amin's birthday, 2023">
+        <figcaption>
+            Amin's birthday, 2023.
+        </figcaption>
+    </figure>
+  
+    <figure>
+        <img
+            src="/people/paul_hage/lab_2023.jpg"
+            alt="Lab, 2023">
+        <figcaption>
+            Lab, 2023.
+        </figcaption>
+    </figure>
             
-            <figure>
-                <img
-                    src="/people/amin_fakharian/amin_SFN2025.jpg"
-                    alt="Amin at poster presentations SFN 2024">
-                <figcaption>
-                    Amin at poster presentations SFN 2024.
-                </figcaption>
-            </figure>
-
-            <figure>
-                <img
-                    src="/people/amin_fakharian/amin_dezeeuw.jpg"
-                    alt="Amin with Prof. Chris DeZeeuw.">
-                <figcaption>
-                    Amin with Prof. Chris DeZeeuw.
-                </figcaption>
-            </figure>
-
-            <figure>
-                <img
-                    src="/people/amin_fakharian/amin_bday_2025.jpg"
-                    alt="Lab celebrating Amin's birthday 2025.">
-                <figcaption>
-                    Lab celebrating Amin's birthday 2025.
-                </figcaption>
-            </figure>
-
-            <figure>
-                <img
-                    src="/people/amin_fakharian/amin_reza_SFN2025.jpg"
-                    alt="Amin and reza preparing for a talk at SFN 2024">
-                <figcaption>
-                   Amin and reza preparing for a talk at SFN 2024.
-                </figcaption>
-            </figure>
-
-            <figure>
-                <img
-                    src="/people/amin_fakharian/amin_YID_2026.jpg"
-                    alt="Amin with Eli, Alden and Reza, 2026">
-                <figcaption>
-                   Young Investigator Day: Amin with Eli, Alden and Reza, 2026
-                </figcaption>
-            </figure>
-            
-            <figure>
-                <img
-                    src="/people/amin_fakharian/amin_graduation.jpg"
-                    alt="Amin at graduation">
-                <figcaption>
-                    Amin at graduation.
-                </figcaption>
-            </figure>
-
-        </div>
-
+    <figure>
+        <img
+            src="/people/amin_fakharian/amin_chris_ceseeuw_2023.jpg"
+            alt="Amin and Chris DeZeeuw, 2023">
+        <figcaption>
+            Amin and Chris DeZeeuw, 2023.
+        </figcaption>
+    </figure>
+  
+    <figure>
+        <img
+            src="/people/amin_fakharian/amin_sfn_2023.jpg"
+            alt="Amin at SFN, 2023">
+        <figcaption>
+            Amin at SFN, 2023.
+        </figcaption>
+    </figure>
+  
+    <figure>
+        <img
+            src="/people/paul_hage/making_guac_2023.jpg"
+            alt="Making guacamole, 2023">
+        <figcaption>
+            Making guacamole, 2023.
+        </figcaption>
+    </figure>
+         
+    <figure>
+        <img
+            src="/people/amin_fakharian/amin_craniotomy.jpg"
+            alt="Experiment, 2022">
+        <figcaption>
+            Experiment, 2022.
+        </figcaption>
+    </figure>
+  
+    <figure>
+        <img
+            src="/people/amin_fakharian/amin_alden_surgery_practice.jpg"
+            alt="Surgery practice">
+        <figcaption>
+            Surgery practice.
+        </figcaption>
+    </figure>
+  
+    <figure>
+        <img
+            src="/people/amin_fakharian/amin_bday_2024.jpg"
+            alt="Amin's birthday, 2024">
+        <figcaption>
+            Amin's birthday, 2024.
+        </figcaption>
+    </figure>
+  
+    <figure>
+        <img
+            src="/people/amin_fakharian/amin_sfn_2024.jpg"
+            alt="Amin at SFN, 2024">
+        <figcaption>
+            Amin at SFN, 2024.
+        </figcaption>
+    </figure>
+  
+    <figure>
+        <img
+            src="/people/amin_fakharian/amin_reza_sfn_2024.jpg"
+            alt="Amin at SFN, 2024">
+        <figcaption>
+            Amin at SFN, 2024.
+        </figcaption>
+    </figure>
+  
+    <figure>
+        <img
+            src="/people/amin_fakharian/lab_sfn_2024.jpg"
+            alt="Lab at SFN, 2024">
+        <figcaption>
+            Lab at SFN, 2024.
+        </figcaption>
+    </figure>
+  
+    <figure>
+        <img
+            src="/people/amin_fakharian/amin_bday_2025.jpg"
+            alt="Amin's birthday, 2025">
+        <figcaption>
+            Amin's birthday, 2025.
+        </figcaption>
+    </figure>
+  
+    <figure>
+        <img
+            src="/people/amin_fakharian/amin_sfn_2025.jpg"
+            alt="Amin at SFN, 2025">
+        <figcaption>
+            Amin at SFN, 2025.
+        </figcaption>
+    </figure>
+  
+    <figure>
+        <img
+            src="/people/amin_fakharian/sailing_2025.jpg"
+            alt="Sailing, 2025">
+        <figcaption>
+            Sailing, 2025.
+        </figcaption>
+    </figure>
+  
+    <figure>
+        <img
+            src="/people/amin_fakharian/amin_graduation.jpg"
+            alt="Graduation">
+        <figcaption>
+            Graduation.
+        </figcaption>
+    </figure>
+  
     </section>
 
 
@@ -282,6 +590,7 @@ Amin graduated in 2025, and subsequently started a postdoctoral fellowship with 
         </p>
 
     </section>
+
 
 </main>
 
