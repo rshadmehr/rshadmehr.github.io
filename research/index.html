@@ -1,0 +1,687 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Research | Shadmehr Laboratory
+  </title>
+  <meta content="Discoveries in cerebellar population coding, movement vigor, motor memories, and internal models from the Shadmehr Laboratory at Johns Hopkins University." name="description"/>
+  <style>
+   :root {
+    --blue:#002D72;
+    --accent:#005EB8;
+    --ink:#19283a;
+    --muted:#526174;
+    --line:#dfe7f0;
+    --soft:#f3f7fb;
+}
+
+* {
+    box-sizing:border-box;
+}
+
+html {
+    scroll-behavior:smooth;
+}
+
+body {
+    margin:0;
+    font:16px/1.7 Arial,Helvetica,sans-serif;
+    color:var(--ink);
+    background:#fff;
+}
+
+a {
+    color:var(--accent);
+}
+
+a:hover {
+    color:var(--blue);
+}
+
+.site-header {
+    background:var(--blue);
+}
+
+.nav {
+    max-width:1100px;
+    margin:auto;
+    padding:0 22px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+    min-height:66px;
+}
+
+.brand {
+    font-weight:700;
+    color:white;
+    text-decoration:none;
+    white-space:nowrap;
+}
+
+.nav-links {
+    display:flex;
+    gap:19px;
+    flex-wrap:wrap;
+}
+
+.nav-links a {
+    color:#fff;
+    text-decoration:none;
+    font-size:14px;
+}
+
+.nav-links a:hover,.nav-links a[aria-current] {
+    text-decoration:underline;
+}
+
+.container {
+    max-width:1050px;
+    padding:0 25px;
+    margin:auto;
+}
+
+.intro {
+    padding:70px 0 48px;
+}
+
+.eyebrow {
+    text-transform:uppercase;
+    letter-spacing:.16em;
+    font-size:12px;
+    color:var(--accent);
+    font-weight:700;
+}
+
+.intro h1 {
+    font-size:clamp(36px,5vw,60px);
+    line-height:1.12;
+    letter-spacing:-.035em;
+    color:var(--blue);
+    margin:12px 0 23px;
+}
+
+.intro p {
+    font-size:19px;
+    max-width:780px;
+    color:var(--muted);
+    margin:0;
+}
+
+.jump {
+    display:flex;
+    flex-wrap:wrap;
+    gap:9px;
+    margin:30px 0 0;
+}
+
+.jump a {
+    border:1px solid #ccd9e8;
+    border-radius:50px;
+    padding:7px 13px;
+    text-decoration:none;
+    font-size:13px;
+    background:#fff;
+}
+
+.research-section {
+    padding:64px 0;
+    border-top:1px solid var(--line);
+    scroll-margin-top:25px;
+}
+
+.section-grid {
+    display:grid;
+    grid-template-columns:minmax(0,1.13fr) minmax(280px,.87fr);
+    gap:46px;
+    align-items:center;
+}
+
+.research-section:nth-of-type(even) .section-grid .visual {
+    order:-1;
+}
+
+.era {
+    font-size:12px;
+    letter-spacing:.13em;
+    text-transform:uppercase;
+    color:var(--accent);
+    font-weight:700;
+}
+
+.research-section h2 {
+    font-size:clamp(26px,3vw,38px);
+    line-height:1.2;
+    color:var(--blue);
+    letter-spacing:-.02em;
+    margin:12px 0 17px;
+}
+
+.research-section p {
+    margin:0 0 15px;
+}
+
+.research-section .idea {
+    font-size:18px;
+    font-weight:700;
+    color:#263f60;
+}
+
+.papers {
+    margin-top:21px;
+    padding-top:15px;
+    border-top:1px solid var(--line);
+}
+
+.papers strong {
+    font-size:13px;
+    text-transform:uppercase;
+    letter-spacing:.07em;
+    color:var(--muted);
+}
+
+.papers ul {
+    padding-left:20px;
+    margin:8px 0 0;
+}
+
+.papers li {
+    font-size:14px;
+    margin:5px 0;
+    line-height:1.5;
+}
+
+.visual {
+    margin:0;
+    background:linear-gradient(140deg,#e9f2fb,#f5f7fa);
+    border:1px solid #dbe5ef;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 10px 35px rgba(0,45,114,.07);
+}
+
+.visual img {
+    display:block;
+    width:100%;
+    height:auto;
+    max-height:390px;
+    object-fit:contain;
+}
+
+.visual .image-fallback {
+    min-height:240px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:28px;
+    text-align:center;
+    color:#486381;
+    font-size:14px;
+}
+
+.visual figcaption {
+    padding:12px 16px;
+    border-top:1px solid #dbe5ef;
+    font-size:12px;
+    color:var(--muted);
+    line-height:1.5;
+    background:#fff;
+}
+
+.outro {
+    background:var(--soft);
+    padding:36px 0;
+    margin-top:24px;
+}
+
+.outro p {
+    max-width:850px;
+    margin:0;
+}
+
+.site-footer {
+    background:var(--blue);
+    color:#fff;
+    padding:25px 0;
+    font-size:13px;
+}
+
+.site-footer a {
+    color:#fff;
+}
+
+@media(max-width:780px) {
+    .nav {
+        padding:13px 18px;
+        align-items:flex-start;
+        flex-direction:column;
+        gap:9px;
+    }
+
+    .nav-links {
+        gap:12px;
+    }
+
+    .intro {
+        padding:42px 0 36px;
+    }
+
+    .section-grid {
+        grid-template-columns:1fr;
+        gap:22px;
+    }
+
+    .research-section:nth-of-type(even) .section-grid .visual {
+        order:0;
+    }
+
+    .research-section {
+        padding:43px 0;
+    }
+
+}
+  </style>
+ </head>
+ <body>
+  <header class="site-header">
+   <nav aria-label="Main navigation" class="nav">
+    <a class="brand" href="/">
+     Shadmehr Laboratory
+    </a>
+    <div class="nav-links">
+     <a href="/">
+      Home
+     </a>
+     <a aria-current="page" href="/research/">
+      Research
+     </a>
+     <a href="/mentoring/">
+      Mentoring
+     </a>
+     <a href="/publications/">
+      Publications
+     </a>
+     <a href="https://courses.shadmehrlab.org/">
+      Courses
+     </a>
+     <a href="/contact/">
+      Contact
+     </a>
+    </div>
+   </nav>
+  </header>
+  <main class="container">
+   <section class="intro">
+    <div class="eyebrow">
+     Three decades of discoveries
+    </div>
+    <h1>
+     How does the brain learn
+     <br/>
+     to control movement?
+    </h1>
+    <p>
+     Our laboratory combines mathematics, human behavior, and neurophysiology in nonhuman primates to understand how the brain predicts the consequences of actions, learns from errors, and turns neural activity into movement.
+    </p>
+    <div class="jump">
+     <a href="#cerebellum">
+      Cerebellar computation
+     </a>
+     <a href="#vigor">
+      Vigor and value
+     </a>
+     <a href="#errors">
+      Memory of errors
+     </a>
+     <a href="#timescales">
+      Timescales of learning
+     </a>
+     <a href="#internal-models">
+      Internal models
+     </a>
+    </div>
+   </section>
+   <section class="research-section" id="cerebellum">
+    <div class="section-grid">
+     <div>
+      <div class="era">
+       Recent work · 2022–2026
+      </div>
+      <h2>
+       A neural language for the cerebellum
+      </h2>
+      <p class="idea">
+       How can thousands of Purkinje cells act together to control a single movement?
+      </p>
+      <p>
+       Individual Purkinje cells do not simply report the direction of an eye movement through their firing rates. A cell can fire during movements in many directions, yet each spike has a measurable downstream influence—a
+       <em>
+        potent vector
+       </em>
+       in the space of movement.
+      </p>
+      <p>
+       By measuring the consequences of spikes and combining these vectors across simultaneously active cells, we found that populations of Purkinje cells can construct a motor command through
+       <strong>
+        superposition and cancellation
+       </strong>
+       . Components that would move the eyes in unwanted directions cancel, while the remaining activity helps guide the eyes toward their goal.
+      </p>
+      <p>
+       Related work examines how complex spikes perturb movements, how climbing fibers distinguish sensory events from movement plans, how synchronized Purkinje cell activity shapes output, and how the cerebellum controls the deceleration of tongue movements.
+      </p>
+      <div class="papers">
+       <strong>
+        Selected papers
+       </strong>
+       <ul>
+        <li>
+         <a href="https://doi.org/10.1152/jn.00253.2025">
+          Shadmehr &amp; Fakharian (2026),
+          <em>
+           J Neurophysiol
+          </em>
+         </a>
+        </li>
+        <li>
+         <a href="https://doi.org/10.1126/science.adu6331">
+          Fakharian et al. (2025),
+          <em>
+           Science
+          </em>
+         </a>
+        </li>
+        <li>
+         <a href="https://doi.org/10.1371/journal.pbio.3003110">
+          Hage et al. (2025),
+          <em>
+           PLoS Biology
+          </em>
+         </a>
+        </li>
+        <li>
+         <a href="https://doi.org/10.1073/pnas.2318849121">
+          Pi et al. (2024),
+          <em>
+           PNAS
+          </em>
+         </a>
+        </li>
+        <li>
+         <a href="https://doi.org/10.1016/j.cub.2023.09.062">
+          Muller et al. (2023),
+          <em>
+           Current Biology
+          </em>
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+     <figure class="visual">
+      <img alt="Figure from Fakharian et al. (2025) illustrating Purkinje cell potent vectors and their superposition" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="/images/research/cerebellar-vectors.jpg"/>
+      <div class="image-fallback" style="display:none">
+       Add a selected panel from Fakharian et al. (2025),
+       <em>
+        Science
+       </em>
+       <br/>
+       images/research/cerebellar-vectors.jpg
+      </div>
+      <figcaption>
+       Suggested figure: Purkinje-cell potent vectors and population cancellation. Fakharian et al.,
+       <em>
+        Science
+       </em>
+       (2025).
+      </figcaption>
+     </figure>
+    </div>
+   </section>
+   <section class="research-section" id="vigor">
+    <div class="section-grid">
+     <div>
+      <div class="era">
+       2010s–2020s
+      </div>
+      <h2>
+       Movement vigor reflects the value of action
+      </h2>
+      <p class="idea">
+       The brain decides not only what to do, but how energetically to do it.
+      </p>
+      <p>
+       Movements toward valuable goals tend to be more vigorous. This observation led us to propose that movement vigor provides a window into the brain's estimate of the subjective value of an action, incorporating expected reward, effort, and time.
+      </p>
+      <p>
+       Studies of eye movements, reaching, and foraging connected decision-making to movement execution: the computations that influence which action is worth taking can also influence the speed and energy with which it is performed.
+      </p>
+      <div class="papers">
+       <strong>
+        Selected papers
+       </strong>
+       <ul>
+        <li>
+         <a href="https://doi.org/10.7554/eLife.87238">
+          Hage et al. (2023),
+          <em>
+           eLife
+          </em>
+         </a>
+        </li>
+        <li>
+         <a href="https://doi.org/10.1016/j.tins.2019.02.003">
+          Shadmehr et al. (2019),
+          <em>
+           Trends Neurosci
+          </em>
+         </a>
+        </li>
+        <li>
+         <a href="http://reprints.shadmehrlab.org/Yoon_PNAS_2018.pdf">
+          Yoon et al. (2018),
+          <em>
+           PNAS
+          </em>
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+     <figure class="visual">
+      <img alt="Figure from a Shadmehr Laboratory publication relating reward, effort, and movement vigor" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="/images/research/movement-vigor.jpg"/>
+      <div class="image-fallback" style="display:none">
+       Add a figure from Yoon et al. (2018) or Hage et al. (2023)
+       <br/>
+       images/research/movement-vigor.jpg
+      </div>
+      <figcaption>
+       Suggested figure: reward, effort, and movement vigor during foraging.
+      </figcaption>
+     </figure>
+    </div>
+   </section>
+   <section class="research-section" id="errors">
+    <div class="section-grid">
+     <div>
+      <div class="era">
+       2014 onward
+      </div>
+      <h2>
+       A memory of errors
+      </h2>
+      <p class="idea">
+       Learning from an error depends on the errors that came before it.
+      </p>
+      <p>
+       Motor adaptation is not governed by the current error alone. We found that the history of experienced errors changes how strongly the brain responds to a new error. Repeated errors of a consistent kind can increase sensitivity to future errors, while inconsistent errors can reduce it.
+      </p>
+      <p>
+       This idea adds a second kind of memory to sensorimotor learning: not only a memory of the motor command, but also a memory that adjusts the
+       <em>
+        learning rate
+       </em>
+       itself.
+      </p>
+      <div class="papers">
+       <strong>
+        Selected paper
+       </strong>
+       <ul>
+        <li>
+         <a href="http://reprints.shadmehrlab.org/Herzfeld_science_2014.pdf">
+          Herzfeld et al. (2014),
+          <em>
+           Science
+          </em>
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+     <figure class="visual">
+      <img alt="Figure from Herzfeld et al. (2014) showing how error history changes learning" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="/images/research/memory-of-errors.jpg"/>
+      <div class="image-fallback" style="display:none">
+       Add a figure from Herzfeld et al. (2014),
+       <em>
+        Science
+       </em>
+       <br/>
+       images/research/memory-of-errors.jpg
+      </div>
+      <figcaption>
+       Suggested figure: how consistent and inconsistent errors alter error sensitivity.
+      </figcaption>
+     </figure>
+    </div>
+   </section>
+   <section class="research-section" id="timescales">
+    <div class="section-grid">
+     <div>
+      <div class="era">
+       2000s onward
+      </div>
+      <h2>
+       Learning unfolds across multiple timescales
+      </h2>
+      <p class="idea">
+       Why do some motor memories form quickly and fade, while others persist?
+      </p>
+      <p>
+       Adaptation reflects the interaction of processes with different learning and retention properties. A fast process responds strongly to error but forgets quickly; a slow process learns more gradually but retains what it has learned.
+      </p>
+      <p>
+       This framework explains patterns of adaptation, forgetting, and savings that cannot be understood as a single uniform memory. It provides a mathematical account of how short-lived and persistent changes coexist during skill acquisition.
+      </p>
+      <div class="papers">
+       <strong>
+        Related work
+       </strong>
+       <ul>
+        <li>
+         <a href="https://doi.org/10.1371/journal.pcbi.0020179">
+          Smith, Ghazizadeh &amp; Shadmehr (2006),
+          <em>
+           PLoS Comput Biol
+          </em>
+         </a>
+        </li>
+        <li>
+         <a href="http://reprints.shadmehrlab.org/Pekny_JNP_2015.pdf">
+          Pekny &amp; Shadmehr (2015),
+          <em>
+           J Neurophysiol
+          </em>
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+     <figure class="visual">
+      <img alt="Figure illustrating fast and slow adaptive processes in motor learning" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="/images/research/learning-timescales.jpg"/>
+      <div class="image-fallback" style="display:none">
+       Add a fast–slow learning figure from Smith et al. (2006)
+       <br/>
+       images/research/learning-timescales.jpg
+      </div>
+      <figcaption>
+       Suggested figure: fast and slow learning processes with different retention rates.
+      </figcaption>
+     </figure>
+    </div>
+   </section>
+   <section class="research-section" id="internal-models">
+    <div class="section-grid">
+     <div>
+      <div class="era">
+       Foundational work · 1994 onward
+      </div>
+      <h2>
+       Internal models: learning to predict the world
+      </h2>
+      <p class="idea">
+       The brain learns how the world responds to our actions—and uses those predictions to move.
+      </p>
+      <p>
+       In our early experiments, people reached while a robotic device applied unfamiliar forces to their hands. Their initial movements were distorted. With practice, the trajectories straightened; when the forces were removed, the hands deviated in the opposite direction.
+      </p>
+      <p>
+       These
+       <em>
+        aftereffects
+       </em>
+       revealed that the nervous system had learned a predictive representation of the new dynamics rather than merely reacting to each disturbance. The force-field adaptation paradigm became a widely used experimental approach to studying internal models, sensory prediction errors, and the role of the cerebellum in motor learning.
+      </p>
+      <div class="papers">
+       <strong>
+        Foundational paper
+       </strong>
+       <ul>
+        <li>
+         <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6577492/">
+          Shadmehr &amp; Mussa-Ivaldi (1994),
+          <em>
+           J Neurosci
+          </em>
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+     <figure class="visual">
+      <img alt="Hand trajectories during initial exposure, adaptation, and aftereffects in a robotic force field" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="/images/research/force-field-adaptation.jpg"/>
+      <div class="image-fallback" style="display:none">
+       Add hand-trajectory panels from Shadmehr &amp; Mussa-Ivaldi (1994)
+       <br/>
+       images/research/force-field-adaptation.jpg
+      </div>
+      <figcaption>
+       Suggested figure: reaching trajectories before, during, and after force-field adaptation.
+      </figcaption>
+     </figure>
+    </div>
+   </section>
+  </main>
+  <div class="outro">
+   <div class="container">
+    <p>
+     Across these projects, a common question connects our earliest experiments to our most recent work:
+     <strong>
+      how does the nervous system transform experience into predictions, and predictions into coordinated movement?
+     </strong>
+    </p>
+   </div>
+  </div>
+  <footer class="site-footer">
+   <div class="container">
+    Shadmehr Laboratory · Johns Hopkins University ·
+    <a href="/contact/">
+     Contact
+    </a>
+   </div>
+  </footer>
+ </body>
+</html>
