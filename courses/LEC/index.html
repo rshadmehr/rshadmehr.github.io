@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learning, Estimation, and Control (580.691/491): lecture topics, homework, and course materials.">
+    <title>Learning, Estimation, and Control | Shadmehr Laboratory</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="site-title">Shadmehr Laboratory</div>
+        <div class="site-subtitle">Laboratory for Computational Motor Control · Johns Hopkins University</div>
+        <nav aria-label="Main navigation">
+            <a href="/">Home</a>
+            <a href="/research/">Research</a>
+            <a href="/mentoring/">Mentoring</a>
+            <a href="/publications/">Publications</a>
+            <a href="/courses/" aria-current="page">Courses</a>
+            <a href="/contact/">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h1>580.691/491 Learning, Estimation, and Control</h1>
+        <section class="profile-section">
+            <p><strong>Textbook:</strong> <em>Biological Learning and Control</em>, Shadmehr and Mussa-Ivaldi, MIT Press.</p>
+            <p>The course introduces modern techniques in mathematical analysis of biomedical data. Techniques include maximum likelihood, estimation theory via Kalman equation, application of Kalman to Brain-Machine Interfaces, state-space models, Bayesian estimation, classification of labeled data, dimensionality reduction, clustering, expectation maximization, and dynamic programming and reinforcement learning via the Bellman equation.</p>
+        </section>
+        <section class="profile-section">
+            <h2>Course topics and materials</h2>
+            <ul>
+                <li id="topic-1">
+                    <h3>Introduction</h3>
+                    <ul>
+                        <li>Perceptron.
+                            <ul class="course-resources">
+                                <li><a href="http://courses.shadmehrlab.org/learningtheory_files/perceptron.pdf" target="_blank" rel="noopener">Homework: predicting which movie to suggest</a></li>
+                                <li><a href="http://courses.shadmehrlab.org/learningtheory_files/perceptrondata.zip" target="_blank" rel="noopener">Data</a></li>
+                                <li><a href="http://courses.shadmehrlab.org/learningtheory_files/perceptron_handwrittendigits.pdf" target="_blank" rel="noopener">Extra credit: handwritten digit classification</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li id="topic-2">
+                    <h3>Regression and maximum likelihood</h3>
+                    <ul>
+                        <li>Probability theory. Bayes rule, expected value and variance of random variables and sums of random variables, expected value of random variables raised to a power, Binomial distribution, Normal distribution.
+                            <ul class="course-resources">
+                                <li><a href="https://storage.googleapis.com/wzukusers/user-31382847/documents/5a731d68be6d6M2zFO3F/Intro_probability.ppt" target="_blank" rel="noopener">Lecture notes</a></li>
+                                <li><a href="http://courses.shadmehrlab.org/learningtheory_files/intro_prob_hw.doc" target="_blank" rel="noopener">Homework: probability theory</a></li>
+                            </ul>
+                        </li>
+                        <li>Least mean squared loss function, batch learning and the normal equation, cross validation.
+                            <ul class="course-resources">
+                                <li><a href="https://storage.googleapis.com/wzukusers/user-31382847/documents/5a79ae4b36c68W0xGCO0/LMS_1.ppt" target="_blank" rel="noopener">Lecture notes</a></li>
+                                <li><a href="http://courses.shadmehrlab.org/learningtheory_files/LMS_1_hw.ppt" target="_blank" rel="noopener">Homework: classify using regression</a></li>
+                                <li><a href="http://courses.shadmehrlab.org/learningtheory_files/classify_regress.txt" target="_blank" rel="noopener">Data set</a></li>
+                            </ul>
+                        </li>
+                        <li>Newton-Raphson, LMS and steepest descent. Newton-Raphson, LMS and steepest descent with Newton-Raphson, weighted least-squares, regression with basis functions, estimating the loss function for learning in humans.
+                            <ul class="course-resources">
+                                <li><a href="https://storage.googleapis.com/wzukusers/user-31382847/documents/5a79ae4b665a4ZQD3YJj/LMS_2.ppt" target="_blank" rel="noopener">Lecture notes</a></li>
+                                <li><a href="http://courses.shadmehrlab.org/learningtheory_files/LMS_3_hw.ppt" target="_blank" rel="noopener">Homework: moving centers of Gaussian bases</a></li>
+                            </ul>
+                        </li>
+                        <li>Backpropagation.
+                            <ul class="course-resources">
+                                <li><a href="https://storage.googleapis.com/wzukusers/user-31382847/documents/5e304acfc4f1dzgMDuZN/backpropagation%20hw.docx" target="_blank" rel="noopener">Homework: digit classification (instructions)</a></li>
+                                <li><a href="https://storage.googleapis.com/wzukusers/user-31382847/documents/5e304b10401edYGXUhuA/backpropagation_blank.zip" target="_blank" rel="noopener">Data</a></li>
+                            </ul>
+                        </li>
+                        <li>Examples of estimation and learning in biological systems (chapter 4.1–4.5). Maximum likelihood estimation; likelihood of data given a distribution; ML estimate of model weights and model noise, integration of multiple sensory data.
+                            <ul class="course-resources">
+                                <li><a href="https://storage.googleapis.com/wzukusers/user-31382847/documents/5a832f732b653jWWerrg/ML_1.ppt" target="_blank" rel="noopener">Lecture notes</a></li>
+                                <li><a href="http://courses.shadmehrlab.org/learningtheory_files/ML_1_hw.ppt" target="_blank" rel="noopener">Homework: derive online estimates of model weights and model noise</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li id="topic-3">
+                    <h3>Estimation theory</h3>
+                    <ul>
+                        <li>State estimation of dynamical systems (chapters 4.6 and 4.7). Optimal parameter estimation, parameter uncertainty, state noise and measurement noise, adjusting learning rates to minimize model uncertainty. Derivation of the Kalman filter algorithm.
+                            <ul class="course-resources">
+                                <li><a href="http://courses.shadmehrlab.org/learningtheory_files/KalmanFilter_hw1.ppt" target="_blank" rel="noopener">Homework: Convergence of the Kalman gain and uncertainty</a></li>
+                            </ul>
+                        </li>
+                        <li>Kalman filter and signal dependent noise (chapters 4.9 and 4.10).
+                            <ul class="course-resources">
+                                <li><a href="http://courses.shadmehrlab.org/learningtheory_files/Kalman_HW8.pdf" target="_blank" rel="noopener">Homework</a></li>
+                                <li><a href="http://courses.shadmehrlab.org/learningtheory_files/Kalman_HW8_dat.mat" target="_blank" rel="noopener">Data</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li id="topic-4">
+                    <h3>Bayesian estimation</h3>
+                    <ul>
+                        <li>Applying Kalman to Brain Machine Interface. Bayes estimation and its relationship to Kalman filters (chapter 5.1). Factorization of joint distribution of Gaussian variables.
+                            <ul class="course-resources">
+                                <li><a href="https://storage.googleapis.com/wzukusers/user-31382847/documents/5a98501d68d86YhlyVLq/bayes2_hw.ppt" target="_blank" rel="noopener">Homework: posterior distribution with two observed data points; maximizing the posterior directly</a></li>
+                            </ul>
+                        </li>
+                        <li>Causal inference (chapters 5.2 and 5.3). The problem of deciding between two generative models.</li>
+                        <li>Examples from biological learning: Kamin blocking, backward blocking, and comparisons between Kalman learning and LMS.</li>
+                        <li>MAP estimation.
+                            <ul class="course-resources">
+                                <li><a href="https://storage.googleapis.com/wzukusers/user-31382847/documents/5aa178866bfa16aSRPPg/bayes_MAP.ppt" target="_blank" rel="noopener">Lecture notes</a></li>
+                                <li><a href="https://storage.googleapis.com/wzukusers/user-31382847/documents/5a985366a381bqOyj2aw/bayes1_hw.ppt" target="_blank" rel="noopener">Homework</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li id="topic-5">
+                    <h3>Classification with labeled data</h3>
+                    <ul>
+                        <li>Fisher linear discriminant, posterior probabilities. Classification using posterior probabilities with explicit models of densities, kernel estimates of density.
+                            <ul class="course-resources">
+                                <li><a href="http://courses.shadmehrlab.org/learningtheory_files/classification_1.ppt" target="_blank" rel="noopener">Lecture notes (part 1)</a></li>
+                                <li><a href="http://courses.shadmehrlab.org/learningtheory_files/classification1_hw.ppt" target="_blank" rel="noopener">Homework</a></li>
+                                <li><a href="http://courses.shadmehrlab.org/learningtheory_files/classification_2.ppt" target="_blank" rel="noopener">Lecture notes (part 2)</a></li>
+                                <li><a href="http://courses.shadmehrlab.org/learningtheory_files/classification2_hw.zip" target="_blank" rel="noopener">Extra credit homework</a></li>
+                            </ul>
+                        </li>
+                        <li>Logistic regression. Iterative re-weighted least squares estimation.
+                            <ul class="course-resources">
+                                <li><a href="http://courses.shadmehrlab.org/learningtheory_files/classification_3.ppt" target="_blank" rel="noopener">Lecture notes</a></li>
+                                <li><a href="http://courses.shadmehrlab.org/learningtheory_files/classification3_hw.zip" target="_blank" rel="noopener">Homework</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li id="topic-6">
+                    <h3>Dimensionality reduction and clustering</h3>
+                    <ul>
+                        <li>Dimensionality reduction: Principal component analysis.
+                            <ul class="course-resources">
+                                <li><a href="https://storage.googleapis.com/wzukusers/user-31382847/documents/8ae6d64c86a442d78bb8e80e20994238/HW14_Spike%20Sorting.pdf" target="_blank" rel="noopener">Homework: spike sorting</a></li>
+                                <li><a href="https://drive.google.com/file/d/1FnljsWzE7dOpKtJIRcGCN_PYrdQwLpsv/view?usp=drive_link" target="_blank" rel="noopener">Data</a></li>
+                            </ul>
+                        </li>
+                        <li>Dimensionality reduction: t-SNE.
+                            <ul class="course-resources">
+                                <li><a href="https://storage.googleapis.com/wzukusers/user-31382847/documents/c6f359e201b24a6f8fbca9ad713de210/t-sne.docx" target="_blank" rel="noopener">Homework</a></li>
+                            </ul>
+                        </li>
+                        <li>Unsupervised classification: Mixture models, K-means algorithm, and Expectation-Maximization.
+                            <ul class="course-resources">
+                                <li><a href="http://courses.shadmehrlab.org/learningtheory_files/EM_1_hw.ppt" target="_blank" rel="noopener">Homework: image segmentation</a></li>
+                                <li><a href="http://courses.shadmehrlab.org/learningtheory_files/brainimage.txt" target="_blank" rel="noopener">Image data</a></li>
+                            </ul>
+                        </li>
+                        <li>EM and maximizing the complete log likelihood.</li>
+                    </ul>
+                </li>
+                <li id="topic-7">
+                    <h3>Bellman equation and optimal control</h3>
+                    <ul>
+                        <li>Lagrange multipliers and constraint minimization (chapter 10).
+                            <ul class="course-resources">
+                                <li><a href="http://courses.shadmehrlab.org/learningtheory_files/Motor_costs.pdf" target="_blank" rel="noopener">Homework</a></li>
+                            </ul>
+                        </li>
+                        <li>Open loop control with signal-dependent noise (chapter 11).
+                            <ul class="course-resources">
+                                <li><a href="http://courses.shadmehrlab.org/learningtheory_files/saccade_minvariance.pdf" target="_blank" rel="noopener">Homework</a></li>
+                            </ul>
+                        </li>
+                        <li>Introduction to optimal feedback control (chapters 12.1–12.3). Bellman equation.
+                            <ul class="course-resources">
+                                <li><a href="http://courses.shadmehrlab.org/learningtheory_files/Bellman_equation.pdf" target="_blank" rel="noopener">Example of Bellman’s equation</a></li>
+                                <li><a href="http://courses.shadmehrlab.org/learningtheory_files/Bellman_equation_HW.pdf" target="_blank" rel="noopener">Homework: noise free optimal feedback control in a grid-world</a></li>
+                            </ul>
+                        </li>
+                        <li>Optimal feedback control of linear dynamical systems with non-signal dependent noise.
+                            <ul class="course-resources">
+                                <li><a href="http://courses.shadmehrlab.org/learningtheory_files/optimal_control_hw4.ppt" target="_blank" rel="noopener">Homework</a></li>
+                            </ul>
+                        </li>
+                        <li>Optimal feedback control with signal dependent noise.
+                            <ul class="course-resources">
+                                <li><a href="http://courses.shadmehrlab.org/learningtheory_files/Mountain_Car_Problem.pdf" target="_blank" rel="noopener">Homework: Mountain car problem via Bellman equations</a></li>
+                            </ul>
+                        </li>
+                        <li>Reinforcement learning.
+                            <ul class="course-resources">
+                                <li><a href="http://courses.shadmehrlab.org/learningtheory_files/Mountain_Car_Problem_Q-learning.pdf" target="_blank" rel="noopener">Homework: Mountain car problem via Q-learning</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section class="profile-section profile-back">
+            <p><a href="/courses/">← Return to courses</a></p>
+        </section>
+    </main>
+    <footer>Shadmehr Laboratory · Johns Hopkins University</footer>
+</body>
+</html>
