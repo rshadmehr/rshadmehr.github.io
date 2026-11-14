@@ -686,6 +686,39 @@ footer {
 .research-footer a {
     color: #002D72;
 }
+/* Publications page: book covers */
+.publication-book {
+    display: grid;
+    grid-template-columns: 125px minmax(0, 1fr);
+    gap: 24px;
+    align-items: start;
+    margin-bottom: 30px;
+}
+
+.publication-book-cover img {
+    display: block;
+    width: 125px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+.publication-book-details p {
+    margin: 0;
+}
+
+@media (max-width: 750px) {
+    .publication-book {
+        grid-template-columns: 90px minmax(0, 1fr);
+        gap: 16px;
+    }
+
+    .publication-book-cover img {
+        width: 90px;
+    }
+}
+
 
 @media (max-width: 750px) {
     .research-intro {
